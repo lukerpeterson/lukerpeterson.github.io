@@ -29,3 +29,6 @@ Randomized background colors on each load
 Logo speed increases as showtime approaches
 
 <marquee> and blinking text because we fear nothing
+
+https://<your-username>.github.io/<repo-name>/
+
