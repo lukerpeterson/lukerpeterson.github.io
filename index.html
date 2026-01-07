@@ -173,7 +173,30 @@
     // TRY TO FORCE MIDI PLAY (BROWSERS HATE FUN)
     const midi = document.getElementById('midi');
     document.body.addEventListener('click', () => midi.play(), { once: true });
+  const enter = document.getElementById('enter');
+const midi = document.getElementById('midi');
+
+enter.addEventListener('click', () => {
+  midi.play();
+  enter.remove();
+});
   </script>
+<div id="enter" style="
+  position:fixed;
+  inset:0;
+  background:black;
+  color:#00ff00;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  font-size:24px;
+  z-index:9999;
+  cursor:pointer;
+">
+  <div class="blink">CLICK TO ENTER</div>
+  <div style="font-size:14px;margin-top:12px;">(MIDI ENABLED)</div>
+</div>
 
 </body>
 </html>
